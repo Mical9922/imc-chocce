@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'open sans';
+}
+
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo{
+    color:#d46a12;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+/*ENCABEZADO*/
+header{
+    width: 100%;
+    height: 600px;
+    background: #f12711;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(41, 92%, 53%, 0.507), hsla(6, 89%, 51%, 0.534)),url(../img/portada1.jpg);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(41, 92%, 53%, 0.507), hsla(6, 89%, 51%, 0.534)), url(../img/portada1.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover; /**/
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+ nav > a{
+    color:#fff; 
+    font-weight: 300; /*mas delgado*/
+    text-decoration: none; /*sin subrayado azul*/
+    margin-right: 10px; /*separado entre ellos*/
+ }
+ nav > a:hover{/*sobre texto*/
+     text-decoration: underline;
+ }
+
+ header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 50px;
+    color:#fff;
+}
+
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color:#fff;
+}
+
+.ola{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/*NOSOTROS*/
+main .acerca-de{
+    
+    padding: 30px 0 60px 0;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    
+}
+.acerca-de:hover{
+    background: hsla(145, 38%, 58%, 0.678);
+}
+
+.contenedor-acerca-de{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.img-acerca-de{
+    width: 50%;
+}
+
+.acerca-de .contenido-textos{
+    width:50%;
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+}
+
+.contenido-textos h3{
+    margin-bottom: 15px;
+    font-size: 20px;
+    padding: 15px 5px 15px 0px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.contenido-textos p span{
+    background: #4d0686;
+    color: #fff;
+    border-radius: 100%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+}
+
+.contenido-textos p{
+    font-size: 20px;
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+/*IR A CALCULADORA*/
+
+.calculador:hover{
+    background: hsla(0, 0%, 84%, 0.678);
+}
+
+.contenedor-calculadora{
+    text-align: center;
+}
+.contenedor-calculadora h3{
+    font-size: 20px;
+    margin-bottom: 0px;
+    padding: 0px 0px 50px 0px;
+    font-weight: 300;
+}
+
+.botoncalcular {
+    
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #6469af;
+}
+.botoncalcular:hover{
+    color: #1883ba;
+    background-color: #ffffff;
+}
+.img-calculadora{
+    width: 50%;
+    padding: 50px 0px 50px 0px;
+}
+
+/*Pie de Pagina*/
+
+footer{
+    background: #414141;
+    padding: 30px 0 30px 0;
+    margin: auto; /*centrar todo*/
+    overflow: hidden;
+}
+
+.contenedor-pie{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ccc; /*simula separador*/
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo a{
+    color: #fff;
+    border-bottom: 3px solid #0e7b23;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+
+    font-weight: 300; /*mas delgado*/
+    text-decoration: none; /*sin subrayado azul*/
+    margin-right: 10px; /*separado entre ellos*/
+}
+
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.titulo-final a {
+    color: #fff;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 300; /*mas delgado*/
+    text-decoration: none; /*sin subrayado azul*/
+    margin-right: 10px; /*separado entre ellos*/
+}
+.content-foo > a:hover{
+    border-bottom: 3px solid #b0e4ba;
+}
+/*Pagina CALCULADORA*/
+.content-test{
+    text-align: center;
+    font-size: 20px;
+    padding: 3px;
+
+}
+.content-test:hover{
+    background: hsl(0, 0%, 96%);
+    
+}
+
+.contenido-texto{
+    text-align: center;
+    padding: 10px 0px 30px 15px;
+    font-weight: 300;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 26px;
+    border-radius: 15px;
+
+    
+}
+.contenido-texto:hover{
+    background: rgb(206, 206, 206);
+}
+
+.contenido-texto h2{
+    color: rgb(25, 169, 113);
+    font-size: 32px;
+}
+.contenido-texto > input{
+    font-size: 30px;
+    border: none;
+    border-bottom: 1.5px solid #324;
+    text-align: center;
+    width: 80px;
+}
+.contenido-texto > label{
+    font-size: 28px;
+    font-weight: 300;
+}

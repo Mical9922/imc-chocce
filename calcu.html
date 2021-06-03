@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMCenter Calculadora</title>
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <!--a[href="#"]{Inicio}*3-->
+            <a href="index.html">Regresar a Principal</a>
+            <a href="#calcular">Calcular</a>
+            <a href="#contacto">¿Qúe es IMC?</a>
+        </nav>
+        <section class="textos-header">
+            <h1>Calculadora de Indice de Masa Corporal</h1>
+            <h2>con IMCenter</h2>
+        </section>
+        <div class="ola" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C377.82,146.53 274.54,88.31 501.41,47.86 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #ffffff;"></path></svg></div>
+    </header>
+    <main>
+        <section class="contenedor calculadora">
+            <h2 class="titulo">Calculadora IMC</h2>
+            <div class="content-test">
+                <div class="contenido-texto">
+                    <h2>¿Cuánto mides?</h2>
+                    <input type="text" placeholder="160" maxlength="3" id="altura" />
+                    <label for="calculator-step-age">cms</label>
+                    <img src="img/estatura.png" alt="">
+                </div>
+                <div class="contenido-texto">
+                    <h2>¿Cuánto pesas?</h2>
+                    <input type="text" placeholder="60" maxlength="3" id="peso"/>
+                    <label for="calculator-step-age">kgs</label>
+                    <img src="img/balanza.png" alt="">
+                </div>
+                <button id="boton">A Calcular</button>
+                
+                <div class="respuesta" id="respuesta">
+                    <h2>tu IMC es:</h2>
+                    
+                    <!--añadir output-->
+                    <h2>tu rango de peso recomendado es: </h2>
+                    <!--añadir output-->
+                    <div class="recomendaciones">
+                        <h2>Recomendaciones:</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui a enim nam sunt delectus, aspernatur quas labore error consequatur nesciunt dolorem distinctio nulla repudiandae libero. Consequatur odio omnis temporibus sint?</p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            
+        </section>
+        <section class="tabla">
+
+        </section>
+        <img class="img" src="img/cuadro.jpeg" alt="">
+    </main>
+    
+
+    <!--Pie De Pagina-->
+    <footer>
+        <a name="contacto" />
+        <div class="contenedor-pie">
+            <div class="content-foo">
+                <a href="#inicio">Inicio</a> 
+            </div>
+            <div class="content-foo">
+                <a href="#">Facebook</a> 
+            </div>
+            <div class="content-foo">
+                <a href="#">Instagram</a> 
+            </div>
+            <div class="content-foo">
+                <a href="#">GitHub</a> 
+            </div>
+            <div class="content-foo">
+                <a href="#">Email</a> 
+            </div>
+        </div>
+        <h2 class="titulo-final"><a href="https://unmsm.edu.pe">UNMSM</a> | <a href="https://sistemas.unmsm.edu.pe">Facultad de Ingeniería de Sistemas</a> </h2>
+        <h2 class="titulo-final">&copy; MiguelCA | Miguel Chocce Alanya</h2>
+
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
